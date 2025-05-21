@@ -1,0 +1,46 @@
+{
+  "name": "matscode/paystack-laravel-sdk",
+  "description": "A Laravel package for seamless Paystack integration, built on top of matscode/paystack-php-sdk.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michael Akanji",
+      "email": "matscode@gmail.com"
+    }
+  ],
+  "keywords": [
+    "laravel",
+    "payment",
+    "paystack",
+    "sdk",
+    "php",
+    "stripe",
+    "processor"
+  ],
+  "require": {
+    "php": ">=8.0",
+    "illuminate/support": ">=9.0",
+    "matscode/paystack-php-sdk": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Matscode\\PaystackLaravel\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Matscode\\PaystackLaravel\\PaystackServiceProvider"
+      ],
+      "aliases": {
+        "Paystack": "Matscode\\PaystackLaravel\\Facades\\Paystack"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+} 

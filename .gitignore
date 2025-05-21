@@ -1,0 +1,12 @@
+composer.phar
+/vendor/
+
+/.idea
+.phpunit.result.cache
+testdox.xml
+phpdoc.xml
+phpunit.xml
+
+.phpdoc/cache
+
+.DS_Store
