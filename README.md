@@ -43,7 +43,7 @@ php artisan vendor:publish --provider="Matscode\\PaystackLaravel\\PaystackServic
 
 Set your Paystack secret key in your `.env` file:
 
-```
+```bash
 PAYSTACK_SECRET_KEY=sk_test_xxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
@@ -52,6 +52,7 @@ PAYSTACK_SECRET_KEY=sk_test_xxxxxxxxxxxxxxxxxxxxxxxx
 ## Usage
 
 You can use the Paystack SDK in Laravel via:
+
 - The `Paystack` Facade (recommended)
 - Dependency Injection (`Matscode\Paystack\Paystack`)
 - The `paystack()` helper (just like `request()` or `auth()`)
