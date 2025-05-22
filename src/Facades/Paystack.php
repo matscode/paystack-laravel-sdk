@@ -10,4 +10,4 @@ class Paystack extends Facade
     {
         return 'paystack';
     }
-} 
+}

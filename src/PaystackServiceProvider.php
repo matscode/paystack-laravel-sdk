@@ -3,7 +3,8 @@
 namespace Matscode\PaystackLaravel;
 
 use Illuminate\Support\ServiceProvider;
-use Matscode\Paystack\Paystack;
+use Matscode\PaystackLaravel\Paystack;
+
 
 class PaystackServiceProvider extends ServiceProvider
 {
@@ -33,4 +34,4 @@ class PaystackServiceProvider extends ServiceProvider
 
         $this->app->alias(Paystack::class, 'paystack');
     }
-} 
+}
