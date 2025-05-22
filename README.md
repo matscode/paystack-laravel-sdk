@@ -35,7 +35,7 @@ composer require matscode/paystack-laravel-sdk
 
 ## Configuration
 
-Publish the config file:
+Optionally, publish the config file:
 
 ```bash
 php artisan vendor:publish --provider="Matscode\\PaystackLaravel\\PaystackServiceProvider" --tag="config"
@@ -68,7 +68,6 @@ You can use the Paystack SDK in Laravel via:
 > - For DI and the helper, both method calls (`->transaction()`) and property access (`->transaction`) are supported.
 > - Always use the method call syntax for maximum compatibility.
 
-**All examples below use the Facade approach, but you may use DI or the helper if you prefer.**
 
 ---
 
